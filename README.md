@@ -1,10 +1,10 @@
 #   OpenObservability Without Boundaries
 This repository contains all the files used during the demo of the Observability clinic: OpenObservability without boundaries
 
-This repository showcase the usage of several solutions :
+This repository showcase the usage of several solutions with Dynatrace:
 * Istio
 * fluentbit v2
-* Keptn LifeCycle Controller
+* The OpenTelemtry Operator
 * THe OpenTelemetry Demo application
 
 
