@@ -66,6 +66,11 @@ spec:
             scrape_interval: 5s
             static_configs:
             - targets: ['cadvisor.cadvisor.svc.cluster.local:8080']
+          - job_name: opentelemetry-collector
+            scrape_interval: 5s
+            static_configs:
+            - targets:
+              - 127.0.0.1:8888
           - job_name: 'istiod'
             kubernetes_sd_configs:
             - role: endpoints

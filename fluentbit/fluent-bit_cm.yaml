@@ -48,7 +48,7 @@ data:
        scrape_interval 2
 
     [INPUT]
-      name cadvisor_scrape
+      name prometheus_scrape
       host cadvisor.cadvisor.svc.cluster.local
       port 8080
       tag otel.metrics
