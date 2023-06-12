@@ -12,7 +12,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "oteldemo.35.234.69.29.nip.io"
+    - "oteldemo.IP_TO_REPLACE.nip.io"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -21,7 +21,7 @@ metadata:
   namespace: otel-demo
 spec:
   hosts:
-  - "oteldemo.35.234.69.29.nip.io"
+  - "oteldemo.IP_TO_REPLACE.nip.io"
   gateways:
   - oteldemo-gateway
   http:
