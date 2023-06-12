@@ -28,6 +28,7 @@ rules:
       - replicationcontrollers/status
       - resourcequotas
       - services
+      - endpoints
     verbs:
       - get
       - list

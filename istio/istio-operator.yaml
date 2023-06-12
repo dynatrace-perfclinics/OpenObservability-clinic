@@ -4,14 +4,16 @@ spec:
   profile: demo
   meshConfig:
     accessLogFile: /dev/stdout
+    defaultConfig:
+      tracing:
+        sampling: 100
+        openCensusAgent:
+          address: oteld-collector.default.svc.cluster.local:55678
     defaultProviders:
       tracing:
         - "otelp"
       accessLogging:
         - "envoylogs"
-    defaultConfig:
-      tracing:
-        sampling: 100
     enablePrometheusMerge: true
     enableTracing: true
     extensionProviders:
